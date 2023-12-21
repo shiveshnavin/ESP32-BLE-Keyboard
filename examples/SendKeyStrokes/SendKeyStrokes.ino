@@ -42,5 +42,10 @@ void loop() {
     delay(10);
     //Serial.println(buttonState0);
     //Serial.println(buttonState2);
+  }else{
+      digitalWrite(led, HIGH);  // turn the LED on (HIGH is the voltage level)
+      delay(200);                      // wait for a second
+      digitalWrite(led, LOW);   // turn the LED off by making the voltage LOW
+      delay(200);
   }
 }
